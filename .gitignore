@@ -1,0 +1,7 @@
+# 虚拟环境文件夹
+venv/
+# 密钥文件
+.env
+# python缓存
+__pycache__/
+*.pyc
