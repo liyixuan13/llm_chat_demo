@@ -1,7 +1,11 @@
 import json
 import os
-import tomllib
 from pathlib import Path
+
+try:
+    import tomllib  # Python 3.11+ 标准库
+except ModuleNotFoundError:  # 兼容 3.10 及更低版本
+    tomllib = None
 
 import requests
 import streamlit as st
@@ -55,7 +59,7 @@ def get_api_key() -> str | None:
         Path(__file__).resolve().parent / ".streamlit" / "secrets.toml",
         Path(__file__).resolve().parent / "secrets.toml",
     ):
-        if secrets_path.exists():
+        if secrets_path.exists() and tomllib is not None:
             try:
                 with secrets_path.open("rb") as f:
                     key = tomllib.load(f).get("DEEPSEEK_API_KEY")
