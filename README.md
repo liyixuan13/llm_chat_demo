@@ -3,7 +3,7 @@
 基于 DeepSeek API 的网页版 AI 聊天助手：支持多轮对话记忆、角色切换（System Prompt）、
 temperature / max_tokens 参数调节，以及打字机式流式输出。这是 24 周学习计划的**作品集项目 1**。
 
-> 在线 Demo：`https://<你的应用名>.streamlit.app`
+> 在线 Demo：https://llmchatdemo-wbreg4dxy2vckjnfkhtdq8.streamlit.app
 
 ## 功能特性
 
