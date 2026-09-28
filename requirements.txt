@@ -1,0 +1,6 @@
+# Web 界面
+streamlit>=1.57
+# 调用 DeepSeek API
+requests>=2.31
+# 控制台版 main.py 读取 .env（网页版用 st.secrets，不需要它）
+python-dotenv>=1.0

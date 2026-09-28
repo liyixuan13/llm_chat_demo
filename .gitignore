@@ -1,7 +1,12 @@
 # 虚拟环境文件夹
 venv/
-# 密钥文件
+.venv/
+
+# 密钥文件（绝对不要提交）
 .env
+.streamlit/secrets.toml
+secrets.toml
+
 # python缓存
 __pycache__/
 *.pyc
